@@ -1,0 +1,77 @@
+:root {
+  --dark-blue: #1f2f57;
+  --light-blue: #51bed5;
+  --white: #fff;
+}
+body {
+  font-weight: 700;
+  font-family: "Rozanova HUM";
+  height: 100%;
+  overflow-x: hidden;
+  color: var(--dark-blue);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+.main {
+  flex: 1 1 100%;
+  height: 100%;
+}
+.footer {
+  background-color: var(--dark-blue);
+  height: 30px;
+}
+
+.big__title {
+  font: normal normal bold 46px/58px "Rozanova HUM";
+}
+
+.light__title {
+  color: var(--light-blue);
+  font: normal normal bold 15px/28px "Rozanova HUM";
+  text-transform: uppercase;
+}
+
+.btn {
+  line-height: calc(19 / 16 * 100%);
+  padding: 10px 32px 10px 32px;
+  border-radius: 27px;
+  transition: 0.4s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn.btn_dark {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+  font: normal normal bold 16px/25px "Rozanova HUM";
+}
+.btn.btn_dark:hover {
+  background-color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+}
+.btn.btn_light {
+  color: var(--dark-blue);
+  background-color: inherit;
+  border: 2px solid var(--dark-blue);
+  font: normal normal bold 16px/19px "Rozanova HUM";
+}
+.btn.btn_light:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+p {
+  font: normal normal normal 16px/27px "Rozanova HUM";
+}
