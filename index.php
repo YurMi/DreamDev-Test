@@ -33,13 +33,15 @@
                 <?php $bg_images = get_field('background_images')?>
 
                 <?php if($bg_images['image_1']):?>
-                <div class="image_section__image image_1">
+                <div class="image_section__image image_1" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300"
+                    data-prlx-dyr>
                     <img src="<?=  $bg_images['image_1']?>" alt="not content image" />
                 </div>
                 <?php endif;?>
 
                 <?php if($bg_images['image_2']):?>
-                <div class="image_section__image image_2">
+                <div class="image_section__image image_2" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300"
+                    data-prlx-dxr>
                     <img src="<?=  $bg_images['image_2']?>" alt="not content image" />
                 </div>
                 <?php endif;?>

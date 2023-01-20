@@ -10,6 +10,7 @@ add_action( 'wp_enqueue_scripts', function(){
 
 	wp_enqueue_script( 'dinemikAdaptive', get_stylesheet_directory_uri() . '/assets/js/lib/dinemikAdaptive.js', array(), null, true);
 	wp_enqueue_script( 'swiper-js', get_stylesheet_directory_uri() . '/assets/js/lib/swiper.js', array(), null, true);
+	wp_enqueue_script( 'parallax', get_stylesheet_directory_uri() . '/assets/js/lib/parallax.js', array(),null,true);
 	wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery','acf-input'),null,true);
 
 

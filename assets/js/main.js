@@ -31,6 +31,7 @@ if (partnersParent) {
     `;
 
     partnersParent.insertAdjacentHTML("afterend", swiperHTML);
+    doSlider(".swiper");
     partnersParent.remove();
   }
 }
@@ -42,23 +43,25 @@ function doSingleImage(param) {
   return param.map((el) => `<img class='partner_logo' src='${el}' alt='partner logo'  />`).join("");
 }
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  slidesPerView: 6,
-  spaceBetween: 10,
-  // loop: true,
-  grabCursor: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+function doSlider(parent) {
+  const swiper = new Swiper(parent, {
+    // Optional parameters
+    slidesPerView: 6,
+    spaceBetween: 10,
+    // loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+}
